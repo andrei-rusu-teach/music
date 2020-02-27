@@ -10,5 +10,7 @@
 	<bean id="musicBean" class="eu.andreirusu.daw.ClassicalMusic" />
 	<bean id="musicPlayer" class="eu.andreirusu.daw.MusicPlayer">
 		<property name="music" ref="musicBean"></property>
+		<property name="name" value="Un careva nume ..."></property>
+		<property name="volume" value="50"></property>
 	</bean>
 </beans>
