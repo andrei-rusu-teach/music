@@ -7,7 +7,7 @@ public class TestSpring {
 		ClassPathXmlApplicationContext context = 
 				new ClassPathXmlApplicationContext("applicationContext.xml");
         
-		Music music = context.getBean("musicBean", Music.class);
+		Music music = context.getBean("classicalMusic", Music.class);
         // Oricum inca cream obiecte direct din aplicatie, deci
 		// inca avem o cuplare a obiectelor ...
 		MusicPlayer musicPlayer = new MusicPlayer(music);
