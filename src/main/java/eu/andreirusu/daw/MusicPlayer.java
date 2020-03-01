@@ -5,11 +5,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class MusicPlayer {
-    private Music music;
+    private ClassicalMusic music;
 
     // Injectam dependenta din exterior
     @Autowired
-    public MusicPlayer(Music music) {
+    public MusicPlayer(ClassicalMusic music) {
         this.music = music;
     }
 
