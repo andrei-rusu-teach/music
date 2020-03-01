@@ -1,9 +1,14 @@
 package eu.andreirusu.daw;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class MusicPlayer {
     private Music music;
 
     // Injectam dependenta din exterior
+    @Autowired
     public MusicPlayer(Music music) {
         this.music = music;
     }
